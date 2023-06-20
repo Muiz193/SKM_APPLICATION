@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linear Equation Solver</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <h1>Linear Equation Solver</h1>
+    <label for="equationCount">Number of Equations:</label>
+    <input type="number" id="equationCount" />
+    <button onclick="generateEquationInputs()">Generate Equation Inputs</button>
+
+    <div id="equationInputs"></div>
+
+    <button onclick="solveEquations()">Solve Equations</button>
+
+    <div id="resultSolve" class="result"></div>
+    
+    <div class="inverse">
+      <br><label class="h2">Choose size of matrix</label><br><br>
+      <!-- Input fields for matrix dimensions -->
+      <label for="rowsInput" class="text">Number of Rows:</label>
+      <input type="number" id="rowsInput" class="custom-input1"><br>
+
+      <label for="colsInput" class="text" >Number of Columns:</label>
+      <input type="number" id="colsInput" class="custom-input1">
+
+      <!-- Input fields for matrix elements -->
+      <div id="matrixInput" class="matrixInput">
+      <!-- Matrix elements will be dynamically added here using JavaScript -->
+      </div>
+
+      <!-- Submit button -->
+      <button id="submitBtn" class="button">Get inverse</button><br><br>
+
+      <div id="resultInv" class="result"></div><br><br>
+  </div>
+  
+    <audio id="myAudio" autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+        
+        <video width="500" class="video" controls>
+            <source src="test.mp4" type="video/mp4">
+        </video>
+
+    <script src="test.js"></script>
+</body>
+</html>
